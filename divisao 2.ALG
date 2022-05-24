@@ -10,8 +10,10 @@ Var
 
 funcao f_divisao(n1,n2:inteiro) : inteiro
 var
-   
+   divisao : real
 inicio
+divisao <- n1/n2
+retorne divisao
 fimfuncao
 
 
