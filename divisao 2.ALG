@@ -1,25 +1,23 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Edson Shinki Kaneshima
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Luca Erichsen Cardoso
 // Data atual  : 23/05/2022
 Var
-   // Seção de Declarações das variáveis
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
    n1,n2: real
 
 funcao f_divisao(n1,n2:inteiro) : inteiro
 var
-   divisao : real
+   
 inicio
-divisao <- n1/n2
-retorne divisao
 fimfuncao
 
 
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
 escreval("Informe o valor do primeiro numero")
 leia(n1)
 escreval("Informe o valor do segundo numero")
