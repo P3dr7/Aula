@@ -32,7 +32,13 @@ multiplicacao <- n1*n2
 retorne multiplicacao
 fimfuncao
 
-
+funcao f_subtracao(n1,n2:inteiro) : inteiro
+var
+   subtracao : real
+inicio
+subtracao <- n1 - n2
+retorne subtracao
+fimfuncao
 
 
 Inicio
