@@ -16,13 +16,6 @@ divisao <- n1/n2
 retorne divisao
 fimfuncao
 
-funcao f_soma(n1,n2:inteiro) : inteiro
-var
-   soma : real
-inicio
-soma <- n1+n2
-retorne soma
-fimfuncao
 
 
 
