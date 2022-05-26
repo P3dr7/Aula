@@ -24,6 +24,16 @@ soma <- n1+n2
 retorne soma
 fimfuncao
 
+funcao f_multiplicacao(n1,n2:inteiro) : inteiro
+var
+   multiplicacao : real
+inicio
+multiplicacao <- n1*n2
+retorne multiplicacao
+fimfuncao
+
+
+
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
