@@ -1,11 +1,64 @@
 Algoritmo "Trabalho2"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Ricardo Petri
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Luca Erichsen Cardoso, Pedro Henrique Ferri, Bruno Broietti Serenato
 // Data atual  : 30/05/2022
-var
+Var
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+   vt,vt_primo: vetor[0..9] de inteiro
+   i,opcao: inteiro
 
+   funcao primo(f_pr : inteiro) : inteiro
+var
+    cont: inteiro
+   ehprimo : logico
 inicio
-// Seção de Comandos 
-fimalgoritmo
+   para i <- 0 ate 9 passo 1 faca
+      ehprimo <- verdadeiro
+      cont <- vt[i]
+      vt_primo[i] <- vt[i]
+      enquanto (cont > 1) faca
+         se (((vt[i] mod cont) = 0) e (vt[i] <> cont)) entao
+            ehprimo <- falso
+
+         fimse
+         cont <- cont - 1
+      fimenquanto
+
+      se (ehprimo= verdadeiro) entao
+         escreval ("O NÃºmero",vt_primo[i], " Ã© primo ")
+      senao
+         escreval ("O NÃºmero",vt_primo[i], " nÃ£o Ã© primo ")
+      fimse
+   fimpara
+   retorne f_pr
+fimfuncao
+
+Inicio
+
+   vt[0] <- 3
+   vt[1] <- 4
+   vt[2] <- 7
+   vt[3] <- 11
+   vt[4] <- 14
+   vt[5] <- 99
+   vt[6] <- 10
+   vt[7] <- 21
+   vt[8] <- 19
+   vt[9] <- 57
+
+   enquanto (opcao <> 9) faca
+      escreval("1-Numeros Primos")
+      escreval("2-Verificar Impares/Pares")
+      escreval("9- Finalizar programa")
+      leia(opcao)
+      escolha(opcao)
+      caso 1
+         escreval(" ",primo(vt[i]))
+      caso 2
+         escreval("NÃ£o Finalizado ainda")
+
+      fimescolha
+   fimenquanto
+Fimalgoritmo
