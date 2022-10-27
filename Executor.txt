@@ -1,0 +1,30 @@
+public class ExecutorFila {
+    public static void main(String[] args) {
+        ListaLigada listaLigada = new ListaLigada();
+
+        listaLigada.Inicio(1);
+        listaLigada.Final(2);
+        listaLigada.Final(3);
+        listaLigada.Final(4);
+        System.out.println(listaLigada.getTamanho());
+
+        System.out.println("");
+
+        Fila fila = new Fila();
+        System.out.println(fila.vazia());
+        fila.enfileira(10);
+        System.out.println(fila.vazia());
+        fila.mostrarFila();
+        fila.enfileira(20);
+        fila.mostrarFila();
+        fila.desenfileira();
+        fila.mostrarFila();
+
+        System.out.println("");
+
+        System.out.println("Os crescentes");
+        listaLigada.crescente();
+        System.out.println("Os decrescentes");
+        listaLigada.decrescente();
+    }
+}
